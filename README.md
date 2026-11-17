@@ -1,4 +1,4 @@
-# Lab Site Template
+# Ilona Marchetti - Research Site
 
 A minimal static-site template for the Adaptive Retrieval Lab research site.
 
