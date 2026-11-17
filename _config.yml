@@ -4,10 +4,10 @@ url: "https://vics-institute.org"
 baseurl: ""
 
 author:
-  name: "Ilona Marchetti"
-  email: "ilona.marchetti@vics-institute.org"
-  github: "imarchetti-vics"
-  scholar: "https://scholar.google.com/citations?user=Q7rT2mAAAAAJ"
+  name: "Your Name"
+  email: "you@example.org"
+  github: "your-handle"
+  scholar: ""
 
 collections:
   publications:
