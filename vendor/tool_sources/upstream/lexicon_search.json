@@ -1,0 +1,38 @@
+{
+  "provider": "corpus-tools",
+  "version": "1.4.2",
+  "name": "lexicon_search",
+  "description": "Search a lexical database for entries that match a surface form or lemma.",
+  "status": "active",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "Surface form or lemma to look up."
+      },
+      "lexicon_id": {
+        "type": "string",
+        "description": "Identifier of the lexical database.",
+        "default": "core-lex"
+      },
+      "max_results": {
+        "type": "integer",
+        "description": "Maximum number of entries to return.",
+        "default": 25
+      },
+      "include_archaic": {
+        "type": "boolean",
+        "description": "Include archaic entries.",
+        "optional": true
+      }
+    },
+    "required": [
+      "query",
+      "lexicon_id"
+    ],
+    "optional": [
+      "include_archaic"
+    ]
+  }
+}

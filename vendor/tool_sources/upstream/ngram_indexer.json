@@ -1,0 +1,25 @@
+{
+  "provider": "corpus-tools",
+  "version": "0.8.0",
+  "name": "ngram_indexer",
+  "description": "Build a character n-gram index over a document collection.",
+  "status": "deprecated",
+  "deprecated_in": "2024.2",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "collection_id": {
+        "type": "string",
+        "description": "Identifier of the document collection."
+      },
+      "n": {
+        "type": "integer",
+        "description": "N-gram size.",
+        "default": 3
+      }
+    },
+    "required": [
+      "collection_id"
+    ]
+  }
+}

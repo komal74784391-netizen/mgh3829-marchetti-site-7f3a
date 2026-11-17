@@ -1,0 +1,30 @@
+{
+  "name": "anchor_lookup",
+  "description": "Find the anchor documents that a passage cites.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "passage_id": {
+        "type": "string",
+        "description": "Identifier of the passage."
+      },
+      "max_depth": {
+        "type": "integer",
+        "description": "Citation traversal depth.",
+        "default": 2
+      },
+      "include_orphans": {
+        "type": "boolean",
+        "description": "Include uncited anchors.",
+        "optional": true
+      }
+    },
+    "required": [
+      "passage_id",
+      "max_depth"
+    ],
+    "optional": [
+      "include_orphans"
+    ]
+  }
+}

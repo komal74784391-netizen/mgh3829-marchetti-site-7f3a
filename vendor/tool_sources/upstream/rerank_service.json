@@ -1,0 +1,41 @@
+{
+  "provider": "rankkit",
+  "version": "1.0.7",
+  "name": "rerank_service",
+  "description": "Reorder candidate passages with a cross-encoder.",
+  "status": "active",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "The user query."
+      },
+      "passages": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Candidate passages to reorder."
+      },
+      "top_k": {
+        "type": "integer",
+        "description": "Number of passages to keep.",
+        "default": 50
+      },
+      "model": {
+        "type": "string",
+        "description": "Cross-encoder model identifier.",
+        "default": "lab-cross-v2"
+      }
+    },
+    "required": [
+      "passages",
+      "query"
+    ],
+    "optional": [
+      "top_k",
+      "model"
+    ]
+  }
+}

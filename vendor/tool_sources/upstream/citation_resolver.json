@@ -1,0 +1,35 @@
+{
+  "provider": "refparse",
+  "version": "0.9.1",
+  "name": "citation_resolver",
+  "description": "Resolve a free-text citation to a structured bibliographic record.",
+  "status": "active",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "raw_citation": {
+        "type": "string",
+        "description": "Citation text as it appears in the source document."
+      },
+      "style": {
+        "type": "string",
+        "description": "Target citation style.",
+        "enum": [
+          "APA",
+          "MLA",
+          "Chicago"
+        ]
+      },
+      "include_abstract": {
+        "type": "boolean",
+        "description": "Attach the abstract when available.",
+        "default": false
+      }
+    },
+    "required": [],
+    "optional": [
+      "style",
+      "include_abstract"
+    ]
+  }
+}

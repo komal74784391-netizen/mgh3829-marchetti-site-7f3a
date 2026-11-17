@@ -1,0 +1,22 @@
+title: "Adaptive Retrieval Lab"
+description: "Research site of the Adaptive Retrieval Lab at VICS"
+url: "https://vics-institute.org"
+baseurl: ""
+
+author:
+  name: "Your Name"
+  email: "you@example.org"
+  github: "your-handle"
+  scholar: ""
+
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single

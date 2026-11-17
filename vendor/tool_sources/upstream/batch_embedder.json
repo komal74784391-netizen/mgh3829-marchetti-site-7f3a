@@ -1,0 +1,29 @@
+{
+  "provider": "dense-core",
+  "version": "2.1.0",
+  "name": "batch_embedder",
+  "description": "Encode a batch of texts into dense vectors.",
+  "status": "active",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "texts": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Texts to encode."
+      },
+      "model": {
+        "type": "string",
+        "description": "Embedding model identifier.",
+        "default": "lab-dense-v3"
+      },
+      "normalize": {
+        "type": "boolean",
+        "description": "L2-normalise the output vectors.",
+        "default": true
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<ul>
+{% for paper in site.publications %}
+  <li>
+    <strong>{{ paper.title }}</strong><br>
+    {{ paper.venue }}{% if paper.year %}, {{ paper.year }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
