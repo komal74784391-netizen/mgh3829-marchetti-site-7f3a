@@ -22,7 +22,10 @@
           "description": "L2-normalise the output vectors.",
           "default": true
         }
-      }
+      },
+      "required": [
+        "texts"
+      ]
     }
   },
   {
@@ -50,7 +53,10 @@
           "default": false
         }
       },
-      "required": [],
+      "required": [
+        "raw_citation",
+        "style"
+      ],
       "optional": [
         "style",
         "include_abstract"
@@ -119,8 +125,7 @@
         }
       },
       "required": [
-        "query",
-        "lexicon_id"
+        "query"
       ],
       "optional": [
         "include_archaic"
@@ -156,8 +161,8 @@
         }
       },
       "required": [
-        "passages",
-        "query"
+        "query",
+        "passages"
       ],
       "optional": [
         "top_k",

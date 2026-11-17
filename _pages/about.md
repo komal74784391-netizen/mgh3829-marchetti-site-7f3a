@@ -11,7 +11,7 @@ I am Ilona Marchetti, Associate Professor at the Vellmar Institute of Computatio
 
 ## Academic background
 
-I hold a Dr. rer. nat. in Computational Linguistics (2014) from Aldervik University and an M.Sc. in Data Science (2010) from the Nordhavn Institute of Technology.
+I hold a Ph.D. in Computational Linguistics (2014) from Aldervik University and an M.Sc. in Data Science (2010) from the Nordhavn Institute of Technology.
 
 ## Research experience
 
